@@ -1,11 +1,11 @@
 
 
-This code dynamically renders products on the page and connects them to the shopping cart. First, it imports /* product data and helper functions. Then it loops through the products array and builds HTML for each product card, including details like name, price, and an Add to Cart button. It injects all of this into the DOM.
+/* This code dynamically renders products on the page and connects them to the shopping cart. First, it imports /product data and helper functions. Then it loops through the products array and builds HTML for each product card, including details like name, price, and an Add to Cart button. It injects all of this into the DOM.
 
 There’s also an updateCartQuantity function, which calculates the total number of items in the cart and updates the cart counter in the UI. Finally, event listeners are attached to every Add to Cart button. When a button is clicked, the corresponding product ID is read from its dataset, the item is added to the cart using addToCart, and the cart quantity is updated.
 
-Essentially, this code connects the product catalog with the shopping cart, keeping the UI and cart state in sync.
- */
+Essentially, this code connects the product catalog with the shopping cart, keeping the UI and cart state in sync. */
+ 
 import { cart, addToCart } from "../data/cart.js";
 import { products } from "../data/products.js";
 import { formatCurrency } from "./utils/monery.js";
