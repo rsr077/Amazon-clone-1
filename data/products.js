@@ -1,3 +1,18 @@
+/* This code maintains a list of products in an array of objects, where each object represents a single product with fields like id, name, priceCents, and rating.
+
+The getProduct function is a helper that takes a product ID as input and searches through the products array. It uses forEach to iterate over every product, and when it finds one whose id matches the given productId, it assigns it to matchingProduct. Finally, it returns that product object.
+
+For example, if I call getProduct with the ID of the basketball, the function will return the basketball product object. This is useful in e-commerce apps whenever you need to retrieve product details by ID, such as when displaying product pages or adding items to the cart.
+ */
+
+
+
+
+
+
+//Using a .js file for product data is fine in small projects because you can just import it directly. But in //real-world applications, data usually comes from an API in JSON format. Using a products.json file makes the //project more flexible — you can load the data dynamically, update it without redeploying your JavaScript //code, and keep a clear separation between logic and data. Essentially, products.js is hardcoded data, while //products.json is externalized data that mimics how real APIs work.
+
+
 export function getProduct(productId) {
   let matchingProduct ;
 
