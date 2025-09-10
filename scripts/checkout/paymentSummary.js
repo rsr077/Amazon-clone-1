@@ -1,3 +1,11 @@
+
+/* The renderPaymentSummary function calculates and displays the checkout order summary. It first loops through the cart, multiplying each product’s price by its quantity, and also adds the cost of the selected delivery option.
+
+Then it computes the subtotal, applies a 10% tax, and calculates the final total. The results are formatted into HTML using a template string and injected into the checkout page’s .js-payment-summary container.
+
+This makes the checkout page dynamic—whenever the cart changes, calling this function updates the totals automatically.
+ */
+
 import { cart } from "../../data/cart.js"; 
 import { getProduct } from "../../data/products.js";
 import { getDeliveryOption } from "../../data/deliveryOptions.js";
