@@ -1,3 +1,12 @@
+/* Start with what the code does overall: “This code initializes or loads the cart.”
+
+Explain how it checks localStorage.
+
+Explain the default cart creation.
+
+End with why we export it. */
+
+
 export let  cart = JSON.parse( localStorage.getItem('cart'));
 
  if(!cart) {
@@ -12,6 +21,8 @@ export let  cart = JSON.parse( localStorage.getItem('cart'));
     deliveryOptionId: '2'
  }];
  }
+
+
 
 
 
